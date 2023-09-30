@@ -1,6 +1,4 @@
-package main
-
-import "log"
+package medium
 
 func max(a, b *int) *int {
 	if *a > *b {
@@ -28,10 +26,4 @@ func memLeak(memory1 int, memory2 int) []int {
 	}
 
 	return []int{i, memory1, memory2}
-}
-
-func main() {
-	obj := memLeak(2, 2)
-
-	log.Println(obj)
 }
